@@ -1,0 +1,33 @@
+<div class="tour-slider">
+    <owl-carousel-o [options]="carouselOptions" class="slides">
+        <ng-container *ngFor="let tour of tours" class="slide">
+            <mat-card class="tour-card" (click)="viewDetails(tour)">
+                <div class="image-container">
+                <img class="tour-image"  src="../../assets/Images/lux-cover.jpg" alt="Tour Image">
+                <div class="rating">
+                    <span>5</span> 
+                    <span><i class="fa-solid fa-star"></i></span> 
+                </div>
+                </div>
+                <div class="card-content">
+                    <h2>{{tour.title}}</h2>
+                </div>
+                <div class="action">
+        
+                        <div class="price">
+                            <p><strong>{{tour.price}}$</strong> / Person </p>
+                        </div>
+                        <div class="btn"> 
+                            <button>
+                                <i class="fa-solid fa-circle-arrow-right"></i>
+                            </button>
+                        </div>
+                    
+                </div>
+            </mat-card>
+        </ng-container>
+
+    </owl-carousel-o>
+</div>
+
+

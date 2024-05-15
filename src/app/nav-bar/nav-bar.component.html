@@ -1,0 +1,12 @@
+<nav class="navbar">
+    <h1 class="logo">VibranTour</h1>
+    <ul class="nav-links" [ngClass]="{'mobile-menu': isMobileMenuOpen}">
+        <li class="active"><a href=""></a>Home</li>
+        <li><a href=""></a>Tours</li>
+        <li><a href=""></a>Explore</li>
+        <li><a href=""></a>About</li>
+        <li class="ctn"><a href=""></a>Sign In</li>
+    </ul>
+    <img src="../../assets/Images/menu.png" alt="" class="menu-btn" (click)="toggleMobileMenu()">
+</nav>
+
